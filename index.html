@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduling Algorithms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">
+        <h1 id="head" style="display: inline-block;">Scheduling Algorithms</h1>
+        <!-- <h5 id="subTitle" style="display: inline-block; margin-left:30px">-20BCE095</h5> -->
+    </div>
+    <div class="container">
+        <div class="add common b" id="ju">
+            <div class="addTitle">Add Process<hr></div>
+            <table class="comStyle" cellpadding="4">
+                <tr>
+                    <td>Process</td>
+                    <td><input type="text" class="text" id = "name"></td>
+                </tr>
+                <tr>
+                    <td>Arriving Time</td>
+                    <td><input type="text" class="text" id = "at"></td>
+                </tr>
+                <tr>
+                    <td>Burst Time</td>
+                    <td><input type="text" class="text" id = "bt"></td>
+                </tr>
+            </table>
+            <input type="file" name="" id="csv_file" onChange="readCsv(this)">
+            <button id="addBtn">Add</button>
+            <div class="processList">
+                <table style="width: 100%;" id="processTable">
+                    <tr>
+                        <th style="width: 40%; background-color:#A6B1E1" class="proTab">Process</th>
+                        <th style="width: 25%; background-color:#A6B1E1" class="proTab">BT</th>
+                        <th style="width: 25%; background-color:#A6B1E1" class="proTab">AT</th>
+                        <th style="width: 10%; " class=""></th>
+                    </tr>
+                </table>
+                
+            </div><br>
+            <select name="" id="drop-down">
+                <option value="1">First Come First Serve (FCFS)</option>
+                <option value="2">Shortest Job First (SJF)</option>
+                <option value="3">Shortest Remaining Time First (SRTF)</option>
+                <option value="4">Round Robbin (RR)</option>
+            </select><br>
+            <div id="time_quantum">
+                <span class="comStyle" style="padding-right: 0;">Time Quantum</span>
+                <span style="padding-left: 0;"><input type="number" name="" id="tq"></span>
+            </div><br>
+            <input type="checkbox" name="" id="auto_mode">Auto Mode
+            <button id="start">Start</button><br>
+            
+        </div>
+        <div class="main common">
+
+            <div class="b" id="ready_div" style="margin-bottom: 22px;">
+                <p class="gantt">Ready Queue : </p>
+                <div class="parent">
+                    <div id="ready"></div>
+                </div>
+            </div>
+
+            <div class="b">
+                <p class="gantt">Gantt Chart : </p>
+                <div class="parent">
+                    <div id="pro"></div>
+                    <div id="num"></div>
+                </div>
+                <button id="temp">Next Check-Point</button>
+            </div>
+            <br>
+            <div class="b">
+                <p class="tableData">Table : </p>
+                <div class="summary">
+                    <table id="last">
+                        <tr>
+                            <th class="c">Process</th>
+                            <th class="c">Arriving Time</th>
+                            <th class="c">Burst Time</th>
+                            <th class="c">Completion Time</th>
+                            <th class="c">Turn around Time</th>
+                            <th class="c">Waiting Time</th>
+                            <th class="c">Remaining Burst Time</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <br>
+            <div class="b">
+                <div class="avg_wait">Avarage Waiting Time : </div>
+                <div class="avg_tat">Avarage Turn around Time : </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

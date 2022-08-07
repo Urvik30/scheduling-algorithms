@@ -1,0 +1,182 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+}
+
+.heading{
+    background-color: #11999E;
+    color: #EEEEEE;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.footer{
+    background-color: #11999E;
+    color: #EEEEEE;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+#head , #foot{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+}
+.common{
+    /* height: 100%; */
+    background-color: red;
+    margin: 10px 4px;
+}
+
+.add{
+    width: 24%;
+    background-color: #30E3CA;
+    text-align: center;
+}
+.demo{
+    display: inline-block;
+}
+
+.main{
+    width: 76%;
+    background-color: #E4F9F5;
+}
+
+.addTitle{
+    color: #40514E;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+hr{
+    border: #EEEEEE solid;
+    margin-top: 0;
+}
+
+.comStyle{
+    font-size: 1.5rem;
+    text-align: left;
+}
+.text{
+    height: 1.5rem;
+    width: 100%;
+}
+#addBtn , #start{
+    margin: 10px;
+    margin-bottom: 20px;
+    height: 2rem;
+    width: 3rem;
+    border-radius: 10px;
+    color: #40514E;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+#temp{
+    margin: 20px 10px;
+    /* position: relative; */
+    height: 2rem;
+    width: 13rem;
+    border-radius: 10px;
+    color: #40514E;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+#addBtn:hover , #start:hover , #temp:hover{
+    background-color: #424874;
+    color: #EEEEEE;
+}
+.parent{
+    /* height: 50px; */
+    margin-left: 10px;
+}
+
+.proTab{
+    border: #424874 solid;
+    border-collapse: collapse;
+    margin: 1px;
+    height: 1rem;
+    background-color: #DCD6F7;
+    border-radius: 20px;
+}
+
+#close{
+    height: 100%;
+    margin: 0;
+}
+
+
+.box{
+    height: 30px;
+    width: 10px;
+    background-color: #E60965;
+    color: #EEEEEE;
+    display: inline-block;
+}
+
+.r{
+    text-align: right;
+    color: #11999E;
+    background-color: inherit;
+    border: #E4F9F5 1px solid;
+    border-collapse: collapse;
+}
+.c{
+    text-align: center;
+    border: #11999E 1px solid;
+    border-collapse: collapse;
+    /* animation: move-square 2s infinite; */
+}
+.b{
+    border: #11999E 2px solid;
+    /* border-radius: 10px; */
+}
+.rr{
+    text-align: center;
+    border: #11999E 1px solid;
+    border-collapse: collapse;
+    margin: 2px;
+}
+#last{
+    width: 100%;
+}
+.gantt , .tableData , .avg_tat , .avg_wait{
+    font-size: 2rem;
+    margin: 10px;
+    color: #11999E;
+}
+.calc{
+    color: #40514E;
+    font-size: 1.5rem;
+}
+.ans{
+    color: #E60965;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#drop-down{
+    background-color: #11999E;
+    color: white;
+    border: white 2px solid;
+    border-radius: 5px;
+}
+
+#tq{
+    width: 10%;
+    margin-left: 10px;
+    height: 1.7rem;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+#time_quantum , #ready_div{
+    display: none;
+}
+
+#csv_file{
+    width: 50%;
+}
