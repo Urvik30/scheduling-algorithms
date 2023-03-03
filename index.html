@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scheduling Algorithms</title>
+
+    <script id="sharer_iife_script" src="https://patelka2211.github.io/sharer/bundle/sharer.iife.min.js"></script>
+    <script id="sharer_button_script" src="https://patelka2211.github.io/sharer/bundle/sharer_button.min.js"
+        type="text/javascript"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="heading">
         <h1 id="head" style="display: inline-block;">Scheduling Algorithms</h1>
@@ -17,19 +24,21 @@
     </div>
     <div class="container">
         <div class="add common b" id="ju">
-            <div class="addTitle">Add Process<hr></div>
+            <div class="addTitle">Add Process
+                <hr>
+            </div>
             <table class="comStyle" cellpadding="4">
                 <tr>
                     <td>Process</td>
-                    <td><input type="text" class="text" id = "name"></td>
+                    <td><input type="text" class="text" id="name"></td>
                 </tr>
                 <tr>
                     <td>Arriving Time</td>
-                    <td><input type="text" class="text" id = "at"></td>
+                    <td><input type="text" class="text" id="at"></td>
                 </tr>
                 <tr>
                     <td>Burst Time</td>
-                    <td><input type="text" class="text" id = "bt"></td>
+                    <td><input type="text" class="text" id="bt"></td>
                 </tr>
             </table>
             <input type="file" name="" id="csv_file" onChange="readCsv(this)">
@@ -43,7 +52,7 @@
                         <th style="width: 10%; " class=""></th>
                     </tr>
                 </table>
-                
+
             </div><br>
             <select name="" id="drop-down">
                 <option value="1">First Come First Serve (FCFS)</option>
@@ -57,7 +66,7 @@
             </div><br>
             <input type="checkbox" name="" id="auto_mode">Auto Mode
             <button id="start">Start</button><br>
-            
+
         </div>
         <div class="main common">
 
@@ -102,4 +111,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
